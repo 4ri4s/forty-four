@@ -1,8 +1,8 @@
 import {loadHeader } from './app.js'
 
-const showHeader = async () => {
+const onInit = async () => {
     const header = await loadHeader();
     document.querySelector("header").innerHTML = header;
 }
 
-showHeader();
+onInit();
