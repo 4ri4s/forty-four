@@ -1,5 +1,25 @@
 
-/* Header-navbar */
+/*
+ * Title: 4ri4s.github.io/forty-four
+ * Versión: 1.0
+ * Author: Bruno Arias
+ * Contact: bruno4ri4s@gmail.com
+*/
+
+/* Table of Contents
+-----------------
+   Roboto css
+   Header Navbar CSS
+	 Main Section
+   General CSS
+	 About Section
+	 Portfolio Section
+	 Contact Section
+	 Footer
+*/
+
+
+/* === Header Navbar CSS === */
 
 * {
     box-sizing: border-box;
@@ -100,9 +120,43 @@
   }
 
 
-/* Main */
+/* === Main Section === */
 .main{
   display: grid;
-  grid-template-columns: 33.3% 33.3% 33.3%;
-  grid-template-rows: 33.3% 33.3% 33.3%;
+  grid-template-columns: repeat(3, 1fr);
+  grid-column-gap: 6px;
+  grid-row-gap:6px;
+  background: lightsalmon;
 }
+
+.main-child{
+  padding:30px;
+  margin:30px;
+  width:100%;
+  background:indigo;
+}
+
+.main-item{
+  background:indianred;
+  
+}
+
+
+/* === General CSS === */
+p{
+  margin: 5px;
+  font-size: 20px;
+  word-wrap: break-word;
+  word-break: break-all;
+  background-color: green;
+  color: white;
+}
+
+
+/* === General class === */
+.center{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
